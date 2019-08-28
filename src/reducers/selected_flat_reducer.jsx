@@ -1,10 +1,9 @@
 export default function(state, action) {
   if (state === undefined) {
-    return [];
+    return null;
   }
-
   switch (action.type) {
-    case 'SET_FLATS':
+    case 'SELECT_FLAT':
       return action.payload;
     default:
       return state;
